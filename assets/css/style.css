@@ -31,8 +31,17 @@ body {
     color: white;
 } */
 
-.nav-link {
-    color: #666666;
+.home-link {
+    color: white;
+}
+
+.nav-link, .welcome-links {
+    color: white;
+    font-size: 18px;
+}
+
+.welcome-links {
+    text-shadow: 2px 2px black;
 }
 
 .navContainer {
@@ -111,3 +120,10 @@ footer {
     text-align: center;
     font-family: 'Josefin Slab', serif;
 }
+
+.hero-welcome-links {
+    max-width: 300px;
+    margin: auto;
+}
+
+
