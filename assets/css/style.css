@@ -1,20 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Cookie|Josefin+Slab');
 
+@font-face {
+    font-family: iconFont;
+    src: url("../images/linea.ttf");
+}
+
 html {
     min-height: 100%;
 }
 
 body {
     background-image: url("../images/annie-spratt-210713-unsplash.jpg");
-    background-repeat: no-repeat center bottom;
+    background-repeat: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+    background-color: #172832;
 }
 
 .navbar {
     max-width: 100%;
     height: 50px;
     margin: 0 auto;
-    background-color: #172830;
+    background-color: #172832;
     color: white;
     /* border-bottom: 2px solid lightgray; */
 }
@@ -33,6 +42,7 @@ body {
 
 .home-link {
     color: white;
+    font-family: iconFont;
 }
 
 .nav-link, .welcome-links {
@@ -111,14 +121,14 @@ footer {
     max-width: 100%;
     height: auto;
     /* margin-bottom: 25px; */
-    background-color: #172830;
+    background-color: #172832;
     margin: 25px auto;
 }
 
 .title a {
     color: white;
     text-align: center;
-    font-family: 'Josefin Slab', serif;
+    /* font-family: 'Josefin Slab', serif; */
 }
 
 .hero-welcome-links {
@@ -126,4 +136,50 @@ footer {
     margin: auto;
 }
 
+label {
+    color: white;
+}
 
+h5 a, h5 {
+    color: white;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1200px) {
+    h1 {
+        font-size: 150px;
+    }
+    body {
+        background-image: url("../images/annie-spratt-210713-unsplash.jpg");
+        background-color: #172832;
+        width: 100%;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: fixed;
+    }
+  }
+
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 120px;
+    }
+
+    
+  }
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 100px;
+    }
+  }
+@media screen and (max-width: 640px) {
+    h1 {
+        font-size: 65px;
+    }
+
+    .welcome-links {
+        font-size: 14px;
+    }
+  }
