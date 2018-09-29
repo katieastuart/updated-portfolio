@@ -182,4 +182,8 @@ h5 a, h5 {
     .welcome-links {
         font-size: 14px;
     }
+
+    .name {
+        padding-top: 100px;
+    }
   }
