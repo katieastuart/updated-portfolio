@@ -6,12 +6,12 @@
 }
 
 html {
-    min-height: 100%;
+    height: 100%;
 }
 
 body {
     background-image: url("../images/annie-spratt-210713-unsplash.jpg");
-    background-repeat: no-repeat center center fixed;
+    background-repeat: no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -28,17 +28,13 @@ body {
     /* border-bottom: 2px solid lightgray; */
 }
 
- /* .navbar-brand {
-    background-color: #4aaaa5;
-    height: 75px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    width: 200px;
-    text-align: center;
-    padding-top: 15px;
-    font-size: 28px;
-    color: white;
+/* .navbar-toggler {
+    border-color: rgb(255, 255, 255);
 } */
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
 
 .home-link {
     color: white;
@@ -48,6 +44,29 @@ body {
 .nav-link, .welcome-links {
     color: white;
     font-size: 18px;
+}
+
+.contact-link a {
+    color: white;
+    margin: auto;
+    display: block;
+    text-align: center;
+    font-size: 72px;
+}
+
+.welcome-links-icons a {
+    color: white;
+    font-size: 22px;
+}
+
+.welcome-links-icons-left {
+    padding-left: 50px;
+    padding-top: 25px;
+}
+
+.welcome-links-icons-right {
+    padding-right: 50px;
+    padding-top: 25px;
 }
 
 .welcome-links {
@@ -86,10 +105,6 @@ p {
 .img-profile {
     max-width: 100%;
     height: auto;
-    /* padding-top: 25px; */
-    /* padding-bottom: 25px; */
-    /* width: 250px;  */
-    /* height: 250px; */
 }
 
 .about-me-container, .contact-container, .portfolio-container {
@@ -97,6 +112,12 @@ p {
     margin-top: 100px;
     padding: 25px;
     border-radius: 15px 15px 15px 15px;
+    margin-bottom: 100px;
+    overflow-y: scroll !important;
+}
+
+.contact-container {
+    padding-bottom: 100px;
 }
 
 .about-me-container h1, .contact-container h1, .portfolio-container h1 {
@@ -106,11 +127,9 @@ p {
 
 footer {
     height: 50px;
-    background-color: #666666;
+    background-color: #172832;
     text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    border-top: #4aaaa5 5px solid;
-    color: lightgray;
+    color: white;
     width: 100%;
     position: fixed; 
     bottom: 0;
@@ -128,6 +147,7 @@ footer {
 .title a {
     color: white;
     text-align: center;
+    margin: auto;
     /* font-family: 'Josefin Slab', serif; */
 }
 
@@ -154,10 +174,10 @@ h5 a, h5 {
         background-image: url("../images/annie-spratt-210713-unsplash.jpg");
         background-color: #172832;
         width: 100%;
+        height: 100%;
         background-position: center bottom;
         background-repeat: no-repeat;
         background-size: contain;
-        position: fixed;
     }
   }
 
@@ -165,14 +185,14 @@ h5 a, h5 {
     h1 {
         font-size: 120px;
     }
-
-    
   }
 
 @media screen and (max-width: 768px) {
     h1 {
         font-size: 100px;
     }
+
+    
   }
 @media screen and (max-width: 640px) {
     h1 {
